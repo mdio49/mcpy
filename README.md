@@ -1,12 +1,14 @@
+# mcpy
 mcpy is a lightweight Python template engine for Minecraft functions. It allows the insertion of Python snippets into Minecraft function files which can be parsed separately to produce working function files for Minecraft.
 
-# Getting Started
+## Getting Started
 Download the repository and place the 'mcpy' folder into your world directory. To compile .mcpy files, run the following Python script.
 ```
 python mcpy/compile.py .\datapacks\
 ```
 The Python script 'compile.py' takes in a list of directories as a command line argument corresponding to directories which the program will walk through and look for .mcpy files to parse and convert into .mcfunction files. A batch file for Windows has been provided for your convenience.
-# Usage
+
+## Usage
 A snippet of Python code can be placed in the function file using the syntax `<% { Python code } %>`. A Minecraft function can be executed inside a Python code block using `</ { Minecraft function } />`. Both of these syntaxes can define a block over multiple lines. However, when executing a Minecraft function inside a Python block, the indentation needs to be consistent with that of the Python code.
 
 For example, the following .mcpy file will result in the command `say Hi!` being executed 3 times.
