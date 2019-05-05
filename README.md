@@ -2,7 +2,7 @@
 mcpy is a lightweight Python template engine for Minecraft functions. It allows the insertion of Python snippets into Minecraft function files which can be parsed separately to produce working function files for Minecraft.
 
 ## Getting Started
-Download the repository and place the 'mcpy' folder into your world directory. To compile .mcpy files, run the following Python script.
+Download the repository and place the 'mcpy' folder into your world directory. Function files using mcpy should be stored using the extension '.mcpy'. To compile .mcpy files, run the following Python script.
 ```
 python mcpy/compile.py .\datapacks\
 ```
