@@ -93,4 +93,4 @@ function2.mcpy:
 ```
 <# template my_template { 'name': "Player 2" } #>
 ```
-After compilation, function1 will be `say Player 1` and function2 will be `say Player 2`.
+After compilation, function1 will be `say Hello Player 1!` and function2 will be `say Hello Player 2!`.
