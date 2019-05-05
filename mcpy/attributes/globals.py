@@ -1,0 +1,3 @@
+{
+	# Insert global attributes here.
+}
