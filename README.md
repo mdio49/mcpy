@@ -42,7 +42,7 @@ say Team 1: %teams[0]%
 say Team 2: %teams[1]%
 
 <% for x in teams:
-    execute as @a[team=%x%] at @s if entity @a[team=!%x,distance=..5] run tellraw @s {"text":"An enemy is approaching!"}
+    </ execute as @a[team=%x%] at @s if entity @a[team=!%x,distance=..5] run tellraw @s {"text":"An enemy is approaching!"} />
 %>
 ```
 Alternatively, attributes may be defined seperately in a file in the 'attributes/' folder of the mcpy root directory, which can be imported into an .mcpy file using `<# attributes { file } #>`. For example, the file 'teams.py' can be created:
@@ -58,7 +58,7 @@ Then this file can be imported into the .mcpy file:
 ```
 <# attributes teams.py #>
 <% for x in teams:
-    execute as @a[team=%x%] at @s if entity @a[team=!%x,distance=..5] run tellraw @s {"text":"An enemy is approaching!"}
+    </ execute as @a[team=%x%] at @s if entity @a[team=!%x,distance=..5] run tellraw @s {"text":"An enemy is approaching!"} />
 %>
 ```
 The file 'globals.py' can be used to define global attributes which are automatically imported into any .mcpy (provided you compile with compile.py).
